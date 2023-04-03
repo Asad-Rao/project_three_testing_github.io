@@ -42,15 +42,15 @@
   vertical-align: middle;
 }
 #shipping_text {
-  display: inline-block;
-  vertical-align: middle;
+  margin-block: 5px;
 }
 
 /*************************************MEDIA QUERY FOR THE HAMBURGER MENUE********/
 @media screen and (max-width: 992px) {
   nav {
     padding-inline: 40px;
-    padding-block: 15px;
+    padding-block-start: 15px;
+    padding-block-end: 30px;
   }
   #nav_menue_two {
     position: absolute;
@@ -131,7 +131,7 @@
 
 .bar1,
 .bar3 {
-  width: 29px;
+  width: 25px;
   height: 2px;
   background-color: #ffffff;
   margin: 6px 0;
@@ -180,7 +180,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-block: 10px;
+  padding-block: 20px;
   width: 72.3%;
 }
 
@@ -315,6 +315,12 @@
 
 /********************************MEDIA QUERY FOR THE SECTION ONE******************/
 @media screen and (max-width: 992px) {
+  .nav-item_truck {
+    display: flex;
+    justify-content: center;
+    column-gap: 1%;
+    flex-wrap: wrap;
+  }
   .sectononecoltwo {
     width: 100% !important;
     text-align: center;
@@ -646,7 +652,7 @@ ul {
   display: block;
 }
 .section_nine_col_heading {
-  font-family: Poppins-SemiBold;
+  font-family: Poppins-Bold;
   color: #121723;
   font-size: 12px;
 }
