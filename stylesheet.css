@@ -36,17 +36,33 @@
   bottom: 6px;
   top: 6px;
 }
+
+#fa-truck {
+  display: inline-block;
+  vertical-align: middle;
+}
+#shipping_text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 /*************************************MEDIA QUERY FOR THE HAMBURGER MENUE********/
 @media screen and (max-width: 992px) {
+  nav {
+    padding-inline: 40px;
+    padding-block: 15px;
+  }
   .office_type_div {
     /* position: relative;
     left: 2%; */
 
     visibility: hidden;
   }
+  .nav_heart_recorder_child_one {
+    display: none;
+  }
   .nav-item {
     margin-block: 10px;
-    margin-left: 8%;
   }
   #nav_input_div {
     position: absolute;
@@ -67,8 +83,8 @@
   .container {
     display: block;
     position: absolute;
-    left: 40px;
-    top: 17px;
+    /* left: 40px; */
+    top: 27px;
   }
   .nav-input {
     display: none;
@@ -202,7 +218,7 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 .recorder_text {
   font-size: 10px;
@@ -223,7 +239,7 @@
 
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 .account_text_div {
   width: 100%;
@@ -276,6 +292,14 @@
     text-align: center;
     margin-inline: 40px;
     margin-block: 20px;
+  }
+  .nav_heart_recorder_parent {
+    width: fit-content !important;
+  }
+  .cart_icon_div {
+    /* position: absolute;
+    right: 40px;
+    top: 17px; */
   }
   .sectononecolone {
     width: 100% !important;
