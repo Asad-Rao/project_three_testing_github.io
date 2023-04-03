@@ -80,23 +80,43 @@ $(document).ready(function () {
   });
   // $('.container').click(function () {});
 });
-const input_display = document.querySelector('#nav-input');
-const searchIcon = document.querySelector('.fa-search');
-const closeIcon = document.querySelector('.fa-close');
-const nav_input_container = document.querySelector('.nav_input_div');
-searchIcon.addEventListener('click', function () {
-  if (input_display.style.display == 'block') {
-    input_display.style.display = 'none';
-  } else {
-    // Show the element if it is currently hidden
-    input_display.style.display = 'block';
-    input_display.style.position = 'absolute';
-    input_display.style.display = 'block';
-    input_display.style.zIndex = '1';
-    input_display.style.top = '12px';
-    input_display.style.right = '25px';
-  }
-});
+
+if (window.matchMedia('(max-width: 992px)').matches) {
+  const input_display = document.querySelector('#nav-input');
+  const searchIcon = document.querySelector('.fa-search');
+  const closeIcon = document.querySelector('.fa-close');
+  const nav_input_container = document.querySelector('.nav_input_div');
+  searchIcon.addEventListener('click', function () {
+    if (input_display.style.display == 'block') {
+      input_display.style.display = 'none';
+      closeIcon.style.display = 'none';
+    } else {
+      searchIcon.style.display = 'none';
+      // Show the element if it is currently hidden
+      closeIcon.style.display = 'block';
+
+      input_display.style.display = 'block';
+      input_display.style.position = 'absolute';
+      input_display.style.display = 'block';
+      input_display.style.zIndex = '1';
+      input_display.style.top = '0px';
+      input_display.style.right = '25px';
+    }
+  });
+
+  closeIcon.addEventListener('click', function () {
+    if (input_display.style.display == 'block') {
+      input_display.style.display = 'none';
+      closeIcon.style.display = 'none';
+      searchIcon.style.display = 'block';
+    } else {
+      input_display.style.display = 'block';
+      closeIcon.style.display = 'block';
+      searchIcon.style.display = 'none';
+    }
+  });
+}
+
 const cabinet_row = document.querySelector('#check_list_div_cabinet_div_row');
 const filtercontainer = document.querySelector('#filter-container');
 $(document).ready(function () {
