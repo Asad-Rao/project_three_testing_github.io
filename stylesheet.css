@@ -44,7 +44,14 @@
 #shipping_text {
   margin-block: 5px;
 }
-
+.nav-item_truck {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#fa-close {
+  display: none;
+}
 /*************************************MEDIA QUERY FOR THE HAMBURGER MENUE********/
 @media screen and (max-width: 992px) {
   nav {
@@ -52,12 +59,14 @@
     padding-block-start: 15px;
     padding-block-end: 30px;
   }
+
   #nav_menue_two {
     position: absolute;
     top: -40px;
     display: flex;
     width: 100%;
     justify-content: center;
+    padding-block: 0;
   }
   .nav_logo_input_icons_text {
     margin-top: 30px;
@@ -176,6 +185,12 @@
   justify-content: space-between;
   width: 100%;
 }
+.nav-menue_two {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 20px;
+}
 .nav-menue_one {
   display: flex;
   justify-content: space-between;
@@ -220,6 +235,10 @@
 
 #fa-close {
   display: none;
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+  right: 30px;
 }
 
 /* .delivery_logo_shipping_text {
@@ -1610,3 +1629,4 @@ span {
     margin-block-end: 20px;
   }
 }
+/********************MEDIA QUERY FOR SECTION FIVE****************************/
