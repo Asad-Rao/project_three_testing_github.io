@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sections</title>
+    <link rel="stylesheet" href="stylesheet_real_task.css" />
+  </head>
+  <body>
+    <div class="pagewidth">
+      <section class="bottle_section">
+        <div class="sectiondiv">
+          <div class="bottle_section_container">
+            <div class="row_one">
+              <div class="col_one">
+                <div class="image_div">
+                  <img src="realtaskimages/spoon-bottle.png" alt="" />
+                </div>
+                <div><h2 class="col_text">PORE INTO 12 OZ OF WATER</h2></div>
+              </div>
+              <div class="col_one">
+                <div class="image_div">
+                  <img src="realtaskimages/titltedbottle.png" alt="" />
+                </div>
+                <div><h2 class="col_text">MIX OR SHAKE IT!</h2></div>
+              </div>
+              <div class="col_one">
+                <div class="image_div">
+                  <img
+                    src="realtaskimages/cord.png"
+                    alt=""
+                    sizes=""
+                    srcset=""
+                  />
+                </div>
+                <div><h2 class="col_text">ENERGIZE YOURSELF</h2></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="sectiondiv">
+          <div class="tab_section_div">
+            <div class="tablistsection">
+              <div class="tab-container">
+                <ul class="tab-labels">
+                  <li class="active my_tab">
+                    <a href="#tab1" class="tab_name">SUPPLEMENT FACTS </a>
+                  </li>
+                  <li class="my_tab">
+                    <a href="#tab2" class="tab_name">INGREDIENTS </a>
+                  </li>
+                  <li class="my_tab">
+                    <a href="#tab3" class="tab_name">DIRECTIONS </a>
+                  </li>
+                </ul>
+                <div id="tab1" class="tab-content active">
+                  <div class="tab_one_container">
+                    <div class="image_div_section_two">
+                      <img
+                        src="realtaskimages/section_two_image.jpg"
+                        class="big_image"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div id="tab2" class="tab-content">
+                  <div class="tab_one_container">
+                    <p class="tab_two_text">
+                      Sodium citrate, sodium bicarbonate, sodium chloride,
+                      magnesium glycinate, magnesium citrate, potassium
+                      bicarbonate, taurine, glutamine, leucine, isoleucine,
+                      valine, L-threonine, alanine, vitamin C, citric acid,
+                      malic acid, citrulline malate, natural & artificial
+                      flavors.
+                    </p>
+                  </div>
+                </div>
+                <div id="tab3" class="tab-content">
+                  <div class="tab_one_container">
+                    <p class="tab_two_text">
+                      Mix 1 scoop of HRDWRK into 8-12 oz of cold water and shake
+                      for 30 seconds until all contents are mixed. Drink it
+                      30-45 minutes before exercise. Take it consistently every
+                      day over time for maximum benefits.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+    </div>
+    <script>
+      const tabs = document.querySelectorAll('.tab-labels li a');
+      tabs.forEach((tab) => {
+        tab.addEventListener('click', (event) => {
+          event.preventDefault();
+          const tabContentId = event.target.getAttribute('href');
+          const tabContent = document.querySelector(tabContentId);
+          const activeTab = document.querySelector('.tab-labels li.active');
+          const activeTabContent = document.querySelector(
+            '.tab-content.active'
+          );
+          activeTab.classList.remove('active');
+          activeTabContent.classList.remove('active');
+          tab.parentElement.classList.add('active');
+          tabContent.classList.add('active');
+        });
+      });
+    </script>
+  </body>
+</html>

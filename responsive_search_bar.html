@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/721e9d1116.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Responsive Search Bar</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .search {
+        position: relative;
+        width: 20%;
+      }
+      .search ::placeholder {
+        color: white;
+      }
+      input[type='text'] {
+        background: black;
+        border: none;
+        color: #ffffff;
+        font-size: 16px;
+        padding: 5px 30px 5px 10px;
+        transition: width 0.4s ease-in-out;
+        /* width: 0; */
+      }
+
+      input[type='text']:focus {
+        width: 200px;
+      }
+
+      .search-icon {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        cursor: pointer;
+      }
+
+      .close-icon {
+        display: none;
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: white;
+      }
+
+      input[type='text']:focus + .search-icon {
+        display: none;
+      }
+
+      input[type='text']:focus + .close-icon {
+        display: block;
+      }
+
+      .search-toggle {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="search" style="background-color: black; color: white">
+      <input
+        type="text"
+        placeholder="Search..."
+        class="input_text"
+        style="background-color: white"
+      />
+      <i class="fa fa-search search-icon" style="color: rgb(255, 255, 255)"></i>
+      <i class="fa fa-close close-icon" style="color: rgb(255, 255, 255)"></i>
+    </div>
+    <div class="search-toggle">
+      <i
+        class="fa fa-search search-toggle-icon"
+        style="color: rgb(255, 255, 255)"
+      ></i>
+    </div>
+
+    <script>
+      const searchInput = document.querySelector('input[type="text"]');
+      const searchIcon = document.querySelector('.search-icon');
+      const closeIcon = document.querySelector('.close-icon');
+      const searchToggleIcon = document.querySelector('.search-toggle-icon');
+
+      searchIcon.addEventListener('click', () => {
+        // Adding Focus method to the search input
+        searchInput.focus();
+      });
+
+      closeIcon.addEventListener('click', () => {
+        // Making sure on clicking closeIcon value inside the input text is empty
+        searchInput.value = '';
+        // searchInput.blur();
+      });
+
+      searchToggleIcon.addEventListener('click', () => {
+        // searchInput.style.width = '0';
+        searchInput.style.display = 'block';
+        searchInput.focus();
+        searchIcon.style.display = 'none';
+        closeIcon.style.display = 'block';
+      });
+
+      // window.addEventListener('resize', () => {
+      //   if (window.innerWidth > 767) {
+      //     searchInput.style.width = '0';
+      //     searchInput.style.display = 'none';
+      //     searchIcon.style.display = 'block';
+      //     closeIcon.style.display = 'none';
+      //   }
+      // });
+    </script>
+  </body>
+</html>

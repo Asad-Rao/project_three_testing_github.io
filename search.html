@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .search {
+        position: relative;
+        background-color: black;
+        width: 16%;
+      }
+
+      input[type='text'] {
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        padding: 5px 30px 5px 10px;
+      }
+
+      input[type='text']:focus {
+        width: 200px;
+      }
+
+      .search-icon {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        cursor: pointer;
+      }
+
+      .close-icon {
+        display: none;
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        cursor: pointer;
+      }
+
+      input[type='text']:focus + .search-icon {
+        display: none;
+      }
+
+      input[type='text']:focus + .close-icon {
+        display: block;
+      }
+
+      .search-toggle {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="search">
+      <input type="text" placeholder="Search..." />
+      <i class="fa fa-search search-icon" style="color: white"></i>
+      <i class="fa fa-close close-icon" style="color: white"></i>
+    </div>
+    <div class="search-toggle">
+      <i class="fa fa-search search-toggle-icon" style="color: white"></i>
+    </div>
+  </body>
+</html>
