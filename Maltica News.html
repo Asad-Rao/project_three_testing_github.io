@@ -12,36 +12,54 @@
     <div class="pagewidth">
       <section class="navigation_div">
         <div class="sectiondiv">
+          <nav>
+    
+
           <div class="nav_logo_input_icons_text">
-            <div>
-              <img src="images/malticalogo.png" alt="" style="display: block" />
+            <div class="container">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+            <div class="logo_image_div">
+              <a href="">
+              <img src="images/malticalogo.png" alt="" style="display: block; max-width: 91px;" class="malticla_logo_image" />
+              </a>
             </div>
 
-            <div>
+            <div class="office_type_div">
               <label class="offietypetext" for="">Office Types</label>
               <select class="nav_selection" name="cars" id="cars">
                 <option value="" selected></option>
                 <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
               </select>
             </div>
-            <div class="nav_input_div">
-              <input
+            <div class="nav_input_div" id="nav_input_div">
+             
+                  <i class="fa fa-search " style="font-size:20px;color:#2b758f;"></i>
+              <input 
                 type="text"
-                class="nav-input"
+                class="nav-input" id="nav-input"
                 placeholder="What are you lookng for?"
-              />
+                />
+               
             </div>
+          
+              
+
+
+
+
+
+            
             <div class="nav_heart_recorder_parent">
               <div class="nav_heart_recorder_child_one">
                 <div class="heart_recorder">
                   <div class="heart_image_div">
-                    <img
-                      src="images/heart_navigation.png"
-                      alt=""
-                      style="display: block"
-                    />
+                    <i
+                      class="fa fa-heart"
+                      style="color: white"
+                    ></i>
                   </div>
                   <div class="recorder_div">
                     <h5
@@ -54,7 +72,7 @@
                 </div>
                 <div class="my_items_div">
                   <h6
-                    class="my_item_account_text"
+                    class="my_item_account_text text_one"
                     style="color: #ffffff; font-family: Poppins-SemiBold"
                   >
                     My Items
@@ -62,7 +80,7 @@
                 </div>
               </div>
 
-              <div class="nav_heart_recorder_child_one">
+              <div class="nav_heart_recorder_child_one  two">
                 <div class="account_signin_div">
                   <div class="account_div">
                     <img
@@ -82,7 +100,7 @@
                 </div>
                 <div class="account_text_div">
                   <h6
-                    class="my_item_account_text"
+                    class="my_item_account_text text_two"
                     style="color: #ffffff; font-family: Poppins-SemiBold"
                   >
                     Account
@@ -91,15 +109,15 @@
               </div>
 
               <div class="cart_icon_div">
-                <img
-                  src="images/cart_icon_navigation.png"
-                  alt=""
-                  style="display: block"
-                />
+                <i
+                  class="fa fa-shopping-cart"
+                  style="font-size: 20px; color: white"
+                ></i>
               </div>
             </div>
-          </div>
-          <ul class="nav-menue">
+
+            <div class="nav-menue_container">
+          <ul class="nav-menue_one"id="nav_menue_items">
             <li class="nav-item">
               <a href="" class="nav_item_anchor">File Cabinet</a>
             </li>
@@ -118,13 +136,22 @@
             <li class="nav-item">
               <a href="" class="nav_item_anchor">2-Hour Rated</a>
             </li>
-            <li class="nav-item delivery_logo_shipping_text">
-              <div class="delivery_logo_div">
-                <img src="images/delivery_nav_logo.png" alt="" />
-              </div>
-              <a href="" class="nav_item_anchor">Free Shipping on all Orders</a>
+         
+          </ul>
+          <ul class="nav-menue" id="nav_menue_two">
+               <li class="nav-item nav-item_truck">
+              <i
+                class="fa fa-truck" id="fa-truck"
+                style="color: white; font-size: 15px; margin-right: 10px"
+                aria-hidden="true"
+              ></i>
+
+              <a href="" class="nav_item_anchor" id="shipping_text" >Free Shipping on all Orders</a>
             </li>
           </ul>
+          </div>
+
+          </nav>
         </div>
       </section>
 
