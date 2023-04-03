@@ -52,6 +52,17 @@
     padding-inline: 40px;
     padding-block: 15px;
   }
+  #nav_menue_two {
+    position: absolute;
+    top: -40px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .nav_logo_input_icons_text {
+    margin-top: 30px;
+  }
+
   .office_type_div {
     /* position: relative;
     left: 2%; */
@@ -65,26 +76,28 @@
     margin-block: 10px;
   }
   #nav_input_div {
-    position: absolute;
-    right: 23%;
+    /* position: absolute;
+    right: 108px;
     text-align: right;
-    top: 43px;
+    top: 85px; */
+    position: absolute;
+    right: 31px;
+    top: 40px;
   }
   .logo_image_div {
     position: absolute;
+    top: 10px;
     right: 50%;
-    top: 17px;
+    transform: translate(-50%);
   }
   .fa-search {
     top: -24px;
-    bottom: 6px;
-    right: 14px;
   }
   .container {
     display: block;
     position: absolute;
     /* left: 40px; */
-    top: 27px;
+    top: 10px;
   }
   .nav-input {
     display: none;
@@ -94,6 +107,7 @@
     display: none;
     flex-direction: column;
     width: 100%;
+    height: 100vh;
   }
 
   .navigation_div {
@@ -102,6 +116,12 @@
     right: 0;
     top: 0;
     z-index: 1;
+  }
+  .my_items_div,
+  .account_text_div,
+  .recorder_div,
+  .sign_in_div {
+    display: none;
   }
   body {
     padding-top: 98px;
@@ -142,6 +162,7 @@
   align-items: center;
   padding-block: 15px;
   flex-wrap: wrap;
+  position: relative;
 }
 .nav_input_div {
   width: 40%;
@@ -149,13 +170,19 @@
   display: flex;
   flex-wrap: wrap;
 }
-.nav-menue {
+.nav-menue_container {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+.nav-menue_one {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   padding-block: 10px;
+  width: 72.3%;
 }
+
 .logo_image_div {
   width: 10%;
 }
@@ -636,6 +663,13 @@ ul {
 .section_nine_div {
   padding-block: 30px;
 }
+
+@media screen and (max-width: 992px) {
+  .maltica_section_nine_new_heading {
+    text-align: center;
+  }
+}
+
 /*************************Section Five Home_Page CSS*********************/
 .section_five {
   padding-block: 30px;
