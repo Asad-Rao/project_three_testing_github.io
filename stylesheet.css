@@ -205,10 +205,10 @@
   width: 10%;
 }
 .nav_item_anchor {
-  font-family: Poppins-SemiBold;
+  font-family: Poppins-Medium;
   color: #ffffff;
   text-decoration: none;
-  font-size: 9px;
+  font-size: 11px;
   display: block;
 }
 .navigation_div {
@@ -316,14 +316,14 @@
 .sectononecolonetext {
   padding-block: 42px;
   padding-inline: 30px;
-  width: 44%;
+  width: 55%;
 }
 .shopnowcolone {
   color: #ffffff;
   font-family: Poppins-Regular;
   background-color: #d73a3a;
   border: 0;
-  font-size: 9px;
+  font-size: 11px;
   border-radius: 3px;
   padding-block: 4px;
   padding-inline: 12px;
@@ -332,6 +332,7 @@
 .storagetext {
   color: #121723;
   font-family: Poppins-Bold;
+  font-size: 21px;
 }
 
 /********************************MEDIA QUERY FOR THE SECTION ONE******************/
@@ -394,7 +395,7 @@
 .premiumtext {
   font-family: Poppins-Medium;
   color: #2b2b2b;
-  font-size: 9px;
+  font-size: 11px;
   padding-block: 12px;
 }
 
@@ -408,6 +409,7 @@
   color: #ffffff;
   font-family: Poppins-Bold;
   text-align: right;
+  font-size: 21px;
 }
 
 .cabinetimages {
@@ -422,7 +424,7 @@
   align-items: center;
 }
 .cabinetcol {
-  width: 15%;
+  width: 16%;
 }
 .cabinetimagesdiv {
   width: 100%;
@@ -459,12 +461,13 @@
 }
 .discover_more_section_four {
   text-align: center;
-  font-size: 9px;
+  font-size: 11px;
   display: block;
 }
 .cabinetimages {
   width: 100%;
   display: block;
+  border-radius: 5px;
 }
 .sectioneightrow {
   display: flex;
@@ -493,7 +496,7 @@
   background-color: white;
   color: #2c374d;
   border: 0;
-  font-size: 9px;
+  font-size: 11px;
   border-radius: 3px;
   padding-block: 4px;
   padding-inline: 12px;
@@ -514,6 +517,7 @@
 .rightproducttext {
   color: #121723;
   font-family: Poppins-Bold;
+  font-size: 19px;
  
 }
 
@@ -576,7 +580,7 @@
 }
 .selectiontext {
   font-family: Poppins-Regular;
-  font-size: 9px;
+  font-size: 12px;
   color: #595959;
   text-align: center;
   padding-block: 5px;
@@ -585,7 +589,7 @@
   color: #000000;
   font-family: Poppins-Bold;
   text-align: center;
-  font-size: 14px;
+  font-size: 15px;
 }
 .image-text-div {
   padding-block: 20px;
@@ -605,15 +609,20 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 992px) {
+  .uldiv {
+    column-gap: 1%;
+  }
+}
 .ulheading {
   font-family: Poppins-Bold;
-  font-size: 13px;
+  font-size: 16px;
 }
 ul {
   list-style: none;
 }
 .ulsectionthree {
-  font-size: 11px;
+  font-size: 12px;
   padding-block: 2px;
 }
 .li-items-section-three {
@@ -638,11 +647,11 @@ ul {
 
 .icon-heading {
   font-family: Poppins-SemiBold;
-  font-size: 14px;
+  font-size: 15px;
 }
 .icon-small-text {
   font-family: Poppins-Regular;
-  font-size: 9px;
+  font-size: 11px;
   padding-block: 8px;
 }
 .icon-text-div {
@@ -667,14 +676,15 @@ ul {
 }
 .section_eight_heading {
   font-family: Poppins-Bold;
-  font-size: 17px;
+  font-size: 19px;
   color: #121723;
   margin-block-end: 20px;
 }
 .section-eight-col-heading {
   font-family: Poppins-SemiBold;
   color: #000000;
-  font-size: 13px;
+  font-size: 15px;
+
 }
 .section-eight-text-div {
   padding-block: 15px;
@@ -683,7 +693,7 @@ ul {
 .maltica_section_nine_new_heading {
   color: #121723;
   font-family: Poppins-Bold;
-  font-size: 17px;
+  font-size: 19px;
 }
 .section_nine_row {
   display: flex;
@@ -742,7 +752,7 @@ ul {
 .section_five_col_heading {
   color: white;
   font-family: Poppins-Bold;
-  font-size: 13px;
+  font-size: 17px;
 }
 .section_five_col_small_text {
   color: white;
@@ -761,7 +771,7 @@ ul {
   width: 26%;
   padding-block: 7.9%;
   text-align: center;
-  padding-inline: 5%;
+  padding-inline: 20px;
 }
 .section_five_colthree {
   background-color: #d73a3a;
@@ -804,16 +814,16 @@ ul {
 }
 
 .section_seven_column_one_text_div {
-  width: 42%;
+  width: 52%;
 }
 .section_seven_column_one_heading {
   color: white;
-  font-family: Poppins-Bold;
-  font-size: 15px;
+  font-family: Poppins-SemiBold;
+  font-size: 24px;
 }
 .section_seven_column_one_text {
   color: white;
-  font-size: 9px;
+  font-size: 12px;
   font-family: Poppins-Regular;
   padding-block: 8px;
 }
@@ -827,20 +837,20 @@ ul {
   width: 67%;
 }
 .dolor_sit_mat_text {
-  font-size: 9px;
+  font-size: 11px;
 }
 .pellent_text {
-  font-size: 10px;
+  font-size: 13px;
 }
 .delivery_text {
-  font-size: 9px;
+  font-size: 10px;
 }
 .image_div_container {
   width: 21%;
   margin-block: auto;
 }
 .price_text {
-  font-size: 9px;
+  font-size: 12px;
 }
 .margin_line {
   margin-block: 10px;
@@ -1539,6 +1549,15 @@ span {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (min-width: 340px) and (max-width: 992px) {
+	.counter_add_to_cart_button
+  {
+   display: flex;
+   justify-content: center;
+  }
+}
+
+
 .add_to_cart_button
 {
   padding-inline: 60px;
