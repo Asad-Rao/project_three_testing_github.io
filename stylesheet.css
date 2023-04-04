@@ -1388,9 +1388,15 @@ input[type='email'] {
 }
 
 @media screen  and (max-width:992px){
+  .carousel_container
+  { margin-inline: 40px !important;
+
+  }
   .slide_div{
     width: 100%;
+   
   }  
+
 }
 /*********************** MEDIA QUERY FOR THE PRODUCT ROW******************/
 
@@ -1678,7 +1684,7 @@ span {
 
 @media screen and (max-width:992px) {
   .five_text_progress_bar{
-column-gap: 33%;
+column-gap: 100%;
     width: 100%;
     justify-content: center;
 
@@ -1741,6 +1747,40 @@ column-gap: 33%;
   width: 24%;
   display: inline-block;
 }
+
+
+@media screen and (min-width:340px) and (max-width: 365px) {
+
+  .product_item_five_stars
+  {
+    width: 34% !important;
+  }
+}
+
+@media screen and (min-width:350px) and (max-width: 390px) {
+
+  .five_five_star_product_review
+  {
+   width: 24%!important;
+  }
+}
+@media screen and (min-width:391px) and (max-width: 450px) {
+
+  .five_five_star_product_review
+  {
+   width: 20%!important;
+  }
+}
+@media screen and (min-width:451px) and (max-width: 912px) {
+
+  .five_five_star_product_review
+  {
+   width: 9%!important;
+  }
+}
+
+
+
 .see_more_review_button_div {
   padding-block-start: 35px;
   padding-block-end: 51px;
@@ -1755,7 +1795,7 @@ column-gap: 33%;
 
 }
 /************************MEDIA QUERY FOR THE REVIEW TEXT*************************/
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 992px) {
   .separator {
     margin-inline: 40px;
     text-align: center;
