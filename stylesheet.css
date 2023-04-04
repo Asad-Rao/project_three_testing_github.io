@@ -694,6 +694,7 @@ ul {
   color: #121723;
   font-family: Poppins-Bold;
   font-size: 19px;
+  padding-block: 10px;
 }
 .section_nine_row {
   display: flex;
