@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row_one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.pagewidth {
+  margin: auto;
+  max-width: 1700px;
+}
+.sectiondiv {
+  max-width: 1200px;
+  margin: auto;
+}
+.bottle_section {
+  background-color: #dcedff;
+  padding-top: 100px;
+  padding-bottom: 93px;
+}
+.col_one {
+  width: 30%;
+}
+.image_div {
+  text-align: center;
+}
+.col_text {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  font-family: 'Avenir Next', sans-serif;
+  text-align: center;
+  padding-block: 30px;
+}
+/*****************Tab List CSS*******************************************/
+.image_div_section_two {
+  text-align: center;
+}
+.tablistsection {
+  margin-top: 100px;
+}
+
+.tab-labels {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  border: none;
+  justify-content: space-between;
+}
+
+.tab-labels li {
+  width: 34%;
+}
+
+.tab-labels li a {
+  display: block;
+  padding: 20px 10px;
+  text-decoration: none;
+  color: #1d242a;
+  font-size: 14px;
+  border-bottom: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tab-labels li.active a {
+  border-color: #ccc;
+  border-bottom-color: #fff;
+  background-color: #dcedff;
+}
+
+.tab-labels li:last-child a {
+  border-right: 1px solid #ccc;
+}
+
+/* .tab-labels li a:hover {
+  background-color: #dcedff;
+} */
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+.tab_one_container {
+  padding-top: 37px;
+  padding-bottom: 37px;
+  padding-right: 45px;
+  padding-left: 45px;
+  background-color: #dcedff;
+}
+.tab_name {
+  text-align: center;
+  font-family: 'Avenir Next', sans-serif;
+  font-weight: 400;
+}
+.big_image {
+  width: 100%;
+  display: block;
+}
+.tab_two_text {
+  font-family: 'Avenir Next', sans-serif;
+  font-size: 16px;
+  color: #1d242a;
+  line-height: 30px;
+}
+
+/***************************************CSS for the Bottles***************/
+@media screen and (max-width: 767px) {
+  .bottle_section_container {
+    padding-inline: 30px;
+  }
+  .tab_section_div {
+    padding-inline: 30px;
+  }
+  .col_one {
+    width: 100%;
+  }
+  .tab-labels {
+    flex-wrap: wrap;
+  }
+  .my_tab {
+    width: 100% !important;
+  }
+}

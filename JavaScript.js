@@ -123,10 +123,61 @@ $(document).ready(function () {
     filtercontainer.style.width = '100%';
     filtercontainer.style.position = 'absolute';
     filtercontainer.style.paddingInline = '40px';
-    filtercontainer.style.height = '1000vh';
+    filtercontainer.style.height = '10000vh';
     $('#filter-container').slideToggle('slow');
   });
 });
+
+$('.carousel_div').slick({
+  infinite: true,
+  slidesToShow: 5,
+  slidesToScroll:5,
+  speed: 300,
+  dots: true,
+  arrows : false,
+  responsive: [
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+        arrows : false,
+      }
+    }
+  ]
+});
+
+
+
+
+// $('.abovefooterrowstorypage').slick({
+//   infinite: true,
+//   slidesToShow: 1,
+//   slidesToScroll: 1,
+//   speed:500,
+//   autoplaySpeed:2000,
+//   dots: false,
+//   autoplay:true,
+//   arrows : false,
+//   responsive: [
+//     {
+//       breakpoint: 767,
+//       settings: {
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//         infinite: true,
+//         dots: false,
+//         arrows : false,
+//       }
+//     }
+//   ]
+// });
+
+
+
+
 
 // var button = document.getElementById('filter-button');
 // var container = document.getElementById('filter-container');

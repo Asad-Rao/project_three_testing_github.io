@@ -15,42 +15,36 @@
         padding: 0;
         box-sizing: border-box;
       }
-      .search-container {
+      .box {
+        width: 15%;
+        background-color: red;
+      }
+      .search-box {
+        height: 40px;
         position: relative;
       }
-
-      .search-icon {
+      .input_search_box {
         position: absolute;
-        top: 50%;
-        left: 10px;
-        transform: translateY(-50%);
-        font-size: 20px;
-        cursor: pointer;
       }
-
-      .search-container input[type='text'] {
-        padding-left: 30px;
-      }
-
-      .search-container .search-icon:before {
-        content: '\f00d';
-      }
-
-      .search-container .search-icon:before {
-        content: '\f002';
-      }
-      .show-input {
-        display: block;
-      }
-      .show-close-icon {
-        display: block;
+      .search_icon {
+        position: absolute;
+        right: 0;
+        top: 0;
       }
     </style>
   </head>
   <body>
-    <div class="search-container">
-      <input type="text" placeholder="Search..." />
-      <i class="fa fa-search search-icon"></i>
+    <div class="box">
+      <div class="search-box">
+        <input
+          type="text"
+          class="input_search_box"
+          placeholder="Type here....."
+        />
+        <label for="" class="icon">
+          <i class="fas fa-search search_icon"></i>
+        </label>
+      </div>
     </div>
     <script>
       const searchIcon = document.querySelector('.search-icon');

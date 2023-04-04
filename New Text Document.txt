@@ -1,0 +1,1071 @@
+{% if product.metafields.custom.tab_image!=blank   or product.metafields.custom.tab_text_one!=blank or product.metafields.custom.tab_text_two!=blank   or  product.metafields.custom.tab_one_name!=blank  or  product.metafields.custom.tab_two_name!=blank  or  product.metafields.custom.tab_three_name!=blank %}
+
+  <section>
+        <div class="section3top">
+          <div class="tab_section_div">
+            <div class="tablistsection">
+              <div class="tab-container">
+                <ul class="tab-labels">
+                  <li class="active my_tab">
+                    <a href="#tab1" class="tab_name">{{product.metafields.custom.tab_one_name }} </a>
+                  </li>
+                  <li class="my_tab">
+                    <a href="#tab2" class="tab_name">{{ product.metafields.custom.tab_two_name }} </a>
+                  </li>
+                  <li class="my_tab">
+                    <a href="#tab3" class="tab_name">{{ product.metafields.custom.tab_three_name }} </a>
+                  </li>
+                </ul>
+                <div id="tab1" class="tab-content active">
+                  <div class="tab_one_container">
+                    <div class="image_div_section_two">
+                      <img
+                        src="{{ product.metafields.custom.tab_image |img_url:""}}"
+                        class="big_image"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div id="tab2" class="tab-content">
+                  <div class="tab_one_container">
+                    <p class="tab_two_text">
+                     {{ product.metafields.custom.tab_text_one }}
+                    </p>
+                  </div>
+                </div>
+                <div id="tab3" class="tab-content">
+                  <div class="tab_one_container">
+                    <p class="tab_two_text">
+                      {{ product.metafields.custom.tab_text_two }}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+{% endif %}
+
+
+
+
+
+
+
+      
+
+ {% if product.metafields.custom.hydrolent_image != blank  %}
+ <section>
+        <div class="section3top">
+            <div class="image-with-text">
+{% if  product.metafields.custom.hydrolent_image != blank %}
+                <div class="productpageflavourdiv">
+                    <img src="{{ product.metafields.custom.hydrolent_image | img_url:"" }}"
+                        class="productpageflavourimage" />
+                </div>
+  {% endif %}
+
+              
+                <div class="productpageflavourcontent">
+                    <div class="hydrolytetextdiv">
+                      {% if  product.metafields.custom.hydrolent_title != blank %}
+                        <h1 class="hydrolyte">{{ product.metafields.custom.hydrolent_title }}
+                        </h1>
+   {% endif%}
+
+                      {% if product.metafields.custom.hydrolent_content != blank  %}
+                        <p class="hydrolytesamlltext">
+                           {{ product.metafields.custom.hydrolent_content }}
+                        </p>
+                      {% endif%}
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+   {% endif %}
+
+
+
+ {% if product.metafields.custom.image_section_image_one != blank or product.metafields.custom.image_section_image_two != blank or product.metafields.custom.image_section_image_three != blank or product.metafields.custom.image_section_image_four != blank %}   
+
+<section>
+        <div class="section3top">
+            <div class="images-section">
+
+                <div class="images-section__item">
+                  {% if product.metafields.custom.image_section_image_one != blank %}
+                    <img src="{{product.metafields.custom.image_section_image_one  | img_url:""}}" alt=""
+                        class="imagesofimagesecion">
+                    {% endif %}
+                    <h3 class="title">{{product.metafields.custom.image_section_title_one  }}</h3>
+                </div>
+                <div class="images-section__item">
+                  {% if  product.metafields.custom.image_section_image_two != blank %}
+                    <img src="{{ product.metafields.custom.image_section_image_two  | img_url:""}}" alt=""
+                        class="imagesofimagesecion">
+                    {% endif %}
+                    <h3 class="title">{{product.metafields.custom.image_section_title_two  }}</h3>
+                </div>
+                <div class="images-section__item">
+                  {% if product.metafields.custom.image_section_image_three != blank %}
+                    <img src="{{product.metafields.custom.image_section_image_three  | img_url:"" }}" alt=""
+                        class="imagesofimagesecion">
+                    {% endif %}
+                    <h3 class="title">{{product.metafields.custom.image_section_title_three  }}</h3>
+                </div>
+                <div class="images-section__item">
+                  {% if  product.metafields.custom.image_section_image_four != blank %}
+                    <img src="{{ product.metafields.custom.image_section_image_four  | img_url:""}}" alt=""
+                        class="imagesofimagesecion">
+                    {% endif %}
+                    <h3 class="title">{{product.metafields.custom.image_section_title_four  }}</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endif %}
+
+
+
+
+
+
+
+{% if product.metafields.custom.bottle_image_one!=blank or  product.metafields.custom.bottle_one_text!=blank    or  product.metafields.custom.bottle_two_image!=blank    or product.metafields.custom.bottle_two_text!=blank  or product.metafields.custom.bottle_three_image!=blank  or  product.metafields.custom.botte_three_text!=blank%}
+     <section class="bottle_section"style="background-color: {{ section.settings.section_background_color }};">
+        <div class="section3top">
+          <div class="bottle_section_container">
+            <div class="row_one">
+              <div class="col_one">
+                <div class="image_div">
+                  <img src="{{ product.metafields.custom.bottle_image_one | img_url:""}}" alt="" />
+             
+                </div>
+                {% if product.metafields.custom.bottle_one_text!=blank %}
+                <div><h2 class="col_text">{{ product.metafields.custom.bottle_one_text }}</h2>
+
+                </div>
+                                  {%endif%}
+              </div>
+              <div class="col_one">
+                <div class="image_div">
+                  <img src="{{product.metafields.custom.bottle_two_image|img_url:"" }}" alt="" />
+                </div>
+                {% if product.metafields.custom.bottle_one_text!=blank %}
+                <div><h2 class="col_text">{{ product.metafields.custom.bottle_two_text }}</h2></div>
+                  {% endif %}
+              </div>
+              <div class="col_one">
+                <div class="image_div">
+                  <img
+                    src="{{ product.metafields.custom.bottle_three_image|img_url:"" }}"
+                    alt=""
+                    sizes=""
+                    srcset=""
+                  />
+                </div>
+                 {% if product.metafields.custom.bottle_one_text!=blank %}
+                <div><h2 class="col_text">{{ product.metafields.custom.botte_three_text }}</h2></div>
+                 {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+{% endif %}
+
+
+
+  <section>
+
+            <div class="backgroundimageguranteeback" style="background-image: url({{ section.settings.background_gurantee_back_image | img_url: "" }})">
+                <div class="section3top">
+                    <div class="guranteebackdiv">
+                        <div class="ninetydaymoneyback">
+                            <h1 class="includetext">{{ section.settings.first_title_text }} <span class="moneyback"> {{ section.settings.second_title_text }}</span>
+                            </h1>
+                            <p class="moneybacksmalltext">{{ section.settings.small_text }}
+                            </p>
+                            <div class="guranteebacklogolink">
+                                <img src="{{ section.settings.gurantee_back_image | img_url: "" }}"
+                                    alt="" class="guranteebackimagelogo">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+{% if product.metafields.custom.faq_question_one!=blank  or product.metafields.custom.faq_answer_one!=blank or product.metafields.custom.faq_question_two!=blank  or product.metafields.custom.faq_answer_two!=blank or product.metafields.custom.faq_question_three!=blank  or product.metafields.custom.faq_answer_three!=blank  or product.metafields.custom.faq_question_four!=blank  or product.metafields.custom.faq_answer_four!=blank   or product.metafields.custom.faq_question_five!=blank  or product.metafields.custom.faq_answer_five!=blank   %}   
+<section>
+        <div class="section3top">
+            <div class="faq-section">
+                <h3 class="text-center">
+                   {{ section.settings.faq_heading }}
+                </h3>
+                <div class="accordianwholecontainer">
+                     
+                    <div class="accordioncontainer">
+                        <button class="myaccordion">{{product.metafields.custom.faq_question_one  }}</button>
+                        <div class="panel">
+                            <p class="accordiontext">{{product.metafields.custom.faq_answer_one }}</p>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="accordioncontainer">
+                        <button class="myaccordion">{{product.metafields.custom.faq_question_two  }}</button>
+                        <div class="panel">
+                            <p class="accordiontext">{{product.metafields.custom.faq_answer_two }}</p>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="accordioncontainer">
+                        <button class="myaccordion">{{product.metafields.custom.faq_question_three  }}</button>
+                        <div class="panel">
+                            <p class="accordiontext">{{product.metafields.custom.faq_answer_three }}</p>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="accordioncontainer">
+                        <button class="myaccordion">{{product.metafields.custom.faq_question_four  }}</button>
+                        <div class="panel">
+                            <p class="accordiontext">{{product.metafields.custom.faq_answer_four }}</p>
+                        </div>
+                    </div>
+
+                  
+                    <div class="accordioncontainer">
+                        <button class="myaccordion">{{product.metafields.custom.faq_question_five  }}</button>
+                        <div class="panel">
+                            <p class="accordiontext">{{product.metafields.custom.faq_answer_five }}</p>
+                        </div>
+                    </div>
+                     
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+  {% endif %}
+{% schema %}
+  {
+    "name": "All Four Sections",
+    "settings": [
+
+
+
+         {
+        "type":"text",
+        "label":"Tab One Text",
+        "id":"tab_one_name"
+      },
+         {
+        "type":"text",
+        "label":"Tab Two Text",
+        "id":"tab_two_name"
+      },
+         {
+        "type":"text",
+        "label":"Tab Three Text",
+        "id":"tab_three_name"
+      },
+
+       {
+        "type":"image_picker",
+        "label":"Money Back Gurantee Background Image",
+        "id":"background_gurantee_back_image"
+      },
+      {
+      "type": "color",
+      "id": "section_background_color",
+      "label": "Background Color",
+    "default": "#dcedff"
+    },
+       {
+        "type":"text",
+        "label":"Second Title",
+        "id":"second_title_text"
+      },
+           {
+        "type":"text",
+        "label":"Text",
+        "id":"small_text"
+      },
+        {
+        "type":"image_picker",
+        "label":"Money Back Gurantee Image",
+        "id":"gurantee_back_image"
+      },
+          {"type":"text",
+        "id":"faq_heading",
+        "label":"FAQ Heading"
+        }
+
+
+      
+    ],    
+    
+    
+    
+    "blocks":
+    [
+      {
+      "name":"FAQ Item",
+      "type":"faq",
+      "settings":[
+        {"type":"text",
+        "id":"questions",
+        "label":"Questions"
+        }
+        ,{
+         "type":"text",
+        "id":"answer",
+        "label":"Answer"
+        }
+        
+      ]
+    }
+  ],
+    "presets":
+    [{
+"name":"All Four Sections"
+    }]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+
+--font-body-family: Questrial, sans-serif;
+  --font-heading-scale:1.0476190476190477;
+  --color-base-text: 14, 27, 77;
+
+--color-foreground: var(--color-base-text);
+  --color-base-text: 14, 27, 77;
+  --font-heading-family: Archivo, serif;
+--font-heading-style: normal;
+  --font-heading-weight: 700;
+    --font-body-weight: 400;
+--font-body-style: normal;
+
+  
+  
+}
+.section3top
+{
+  max-width: 1300px;
+  margin: auto;
+}
+.pagewidth
+{
+    max-width: 1700px;
+    margin: auto;
+}
+/************************Why use Bidet*******************/
+
+
+.image-with-text
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  margin-block:50px;
+
+}
+.productpageflavourdiv
+{
+    width: 50%;
+}
+.hydrolytetextdiv
+{
+
+width: 92%;
+margin: auto;
+
+}
+.productpageflavourimage
+{
+    width: 92%;
+    display: block;
+    object-fit: contain;
+    height: 100%;
+    margin: auto;
+}
+.productpageflavourcontent
+{
+    width: 50%;
+    padding-block: 83.3985px;
+
+  
+}
+.hydrolytesamlltext
+{
+line-height: 30px;
+
+ color: rgba(var(--color-foreground),.75);
+font-size: 1.6rem;
+font-family: var(--font-body-family);
+font-style: var(--font-body-style);
+font-weight: var(--font-body-weight);
+letter-spacing: 0.06rem;
+
+}
+.hydrolyte
+{
+    width: 100%;
+    font-size: calc(var(--font-heading-scale) * 4rem);
+font-family: var(--font-heading-family);
+line-height:1.4;
+margin: 0 0 0.5em;
+color: rgb(var(--color-foreground));
+font-style: var(--font-heading-style);
+font-weight: var(--font-heading-weight);
+letter-spacing: calc(var(--font-heading-scale) * .06rem);
+line-height: calc(1 + .3/max(1,var(--font-heading-scale)));
+}
+
+/********************************************************/
+.images-section
+{
+    display: flex;
+    flex-wrap:wrap;
+  margin-bottom:124px;
+}
+.imagesofimagesecion
+{
+    width: 100%;
+    display: block;
+}
+.images-section__item
+{
+    width: 25%;
+    position: relative;
+}
+.title
+{
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:3.5px;
+    color:#fff;
+    text-align:center;
+    width:100%;
+    position: absolute;
+    bottom:30px;
+    margin: 0;
+    font-family:AvenirNextFont;
+
+}
+
+
+
+/************************************Accordian CSS**********/
+.faq-section
+{
+    margin-top: 90px;
+    margin-bottom:80px
+}
+
+.text-center
+{
+    text-align: center;
+    color:#040506;
+    font-size: calc(var(--font-heading-scale) * 4rem);
+margin-bottom: 30px;
+color: rgb(var(--color-foreground));
+font-style: var(--font-heading-style);
+font-weight: var(--font-heading-weight);
+}
+
+.accordianwholecontainer {
+max-width: 1300px;
+width:100%;
+padding-inline: 50px;
+    padding-block-end: 64px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1%;
+}
+
+
+.accordioncontainer {
+
+    width: 100%;
+    position: relative;
+}
+
+
+.myaccordion {
+
+    background-color: #eff0f5;
+font-family: var(--font-body-family);
+font-size:18px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    font-weight: bold;
+    font-size: 18px;
+    padding-block: 35px;
+    padding-inline-end: 56px;
+    outline: none;
+    border-top: 1px solid #dfe1e3;
+
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+   
+
+}
+
+.active,
+.myaccordion:hover {
+
+    color: #000000;
+
+}
+
+.myaccordion:after {
+    content: '\002B';
+
+    position: absolute;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-right:0;
+    padding-left: 17px;
+    top: 23.5px;
+    bottom: 0;
+    right: 0px;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+
+    background-color: #eff0f5;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-family:AvenirNextFont;
+    color: rgb(58, 58, 58);
+        outline: none;
+        border-bottom: 1px solid #dfe1e3;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+}
+
+.accordiontext {
+    padding-bottom: 30px;
+font-size: 16px;
+    font-family: var(--font-body-family);
+    font-style: var(--font-body-style);
+    font-weight: var(--font-body-weight);
+   
+
+
+  
+color: #1d242a;
+line-height: 30px;
+background-color: #eff0f5;
+}
+.includetext{
+color:#d9ba51;
+font-family:AvenirNextFont;
+margin-bottom: 25px;
+font-size: 30px;
+}
+.moneyback
+{   
+    color: #fff;
+}
+.moneybacksmalltext
+{
+    font-family:AvenirNextFont;
+    color: #fff;
+    line-height: 24px;
+    margin-bottom: 35px;
+    margin-top: 0;
+    margin-inline: 0px;
+    font-size: 16px;
+
+}
+
+
+
+
+/******************************Money Back Gurantee CSS******/
+.backgroundimageguranteeback
+{
+position:relative;
+background-size: cover;
+background-repeat: no-repeat no-repeat;
+background-color:transparent;
+overflow: hidden;
+padding-block: 110px;
+margin-block:50px;
+}
+.guranteebackdiv
+{
+display: flex;
+flex-direction: row;
+padding-left: 50px;
+padding-right: 50px;
+position: relative;
+padding-block: 100px;
+}
+.ninetydaymoneyback
+{
+    width: 40%;
+    position: absolute;
+    top: 0;
+    left:50%;
+    height: 100%;
+    text-align: left;
+
+}
+.guranteebacklogolink
+{
+    width: auto;
+}
+.guranteebackimagelogo
+{
+   
+    display: block;
+}
+@media only screen and (max-width: 1181px) {
+   
+
+
+/******************Why Use Bidet**************************/
+.productpageflavourdiv
+{
+    width: 100%;
+}
+.productpageflavourcontent
+{
+    width: 100%;
+
+}
+}
+/************************IMAGES SECTION**********************/
+
+ 
+  @media only screen and (max-width: 750px){
+
+    .images-section__item
+    {
+    width: 50%;
+    
+    }
+
+  }
+
+
+
+  /*************Media Query for the  Cycle Section********************/
+  @media only screen and (max-width: 990px){
+
+    .ninetydaymoneyback
+    {
+    width: 100%;
+    left:0;
+    padding-inline: 4%;
+    }
+
+  }
+
+/**********************************************************************************************************************/
+#bottlesection {
+        background-image: url("images/threebottlesbackground.png");
+        /* margin: 4% auto; */
+        padding-block: 45px;
+        background-size: cover;
+        background-position: center;
+        background-color: #eff6f9;
+    }
+
+
+
+    .textbottlesection {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap: 1%;
+    }
+
+    .textbottleheading {
+        width: 50%;
+    }
+
+    .exploreourcollection {
+        font-size: 20px;
+        width: 50%;
+        padding-block: 20px;
+
+    }
+
+
+    .textbottlesection h2 {
+        font-size: 30px;
+        font-family: RanuaTrials-Regular;
+    }
+
+    .textbottlesection p {
+        font-family: RanuaTrials-Regular;
+        color: rgb(58, 58, 58);
+        /* padding-block-end: 39px;
+        padding-block-start: 30px; */
+    }
+
+    .bottlesrow {
+        display: flex;
+        align-items: center;
+        column-gap: 3%;
+        flex-wrap: wrap;
+        /* padding-block: 41px; */
+    }
+
+    .threebottles {
+        width: 100%;
+        display: block;
+    }
+
+    .bottlecolumn {
+        width: 22%;
+        text-align: center;
+        position: relative;
+        background-color: white;
+        margin-block-start: 60px;
+        /* margin-block-end: 60px; */
+        padding-block-start: 40px;
+
+    }
+
+    /* @media screen and (max-width: 409px) {
+        .alignment {
+            padding-block: 11px;
+        }
+
+        .alignment2 {
+            padding-block: 10px;
+        }
+    } */
+
+
+
+    
+
+    @media only screen and (min-width:768px) and (max-width:794px) {
+
+        .alignment2 {
+            padding-block: 9px;
+        }
+    }
+
+
+
+
+    .topcornertext {
+        position: absolute;
+        top: -8%;
+        color: black;
+        font-family: RanuaTrials-Heavy;
+        width: 76%;
+        text-align: left;
+        right: 28%;
+        /* word-wrap: break-word; */
+    }
+
+    .threebottlescontent {
+
+
+        background-color: white;
+        position: relative;
+        bottom: 0px;
+        padding-block-end: 35px;
+    }
+
+    .threebottlename {
+        font-family: RanuaTrials-Medium;
+        color: rgb(58, 58, 58);
+        font-size: 16px;
+    }
+
+    .threebottlep {
+        font-family: RanuaTrials-Regular;
+        color: rgb(162, 162, 162);
+        font-size: 12px;
+        padding-block: 6px;
+    }
+
+    .buynowbutton {
+        color: rgb(58, 58, 58);
+        font-family: RanuaTrials-Medium;
+        border: none;
+        border-radius: 20px;
+        padding-block: 10px;
+        padding-inline: 24px;
+        background-color: rgba(253, 203, 121, 255);
+        font-size: 12px;
+    }
+
+    .textbottlesection {
+        /* text-align: center; */
+        font-family: RanuaTrials-Medium;
+
+    }
+
+    .textbottlesection h2 {
+        color: rgb(58, 58, 58);
+    }
+
+
+.row_one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.pagewidth {
+  margin: auto;
+  max-width: 1700px;
+}
+.sectiondiv {
+  max-width: 1200px;
+  margin: auto;
+}
+.bottle_section {
+
+  padding-top: 100px;
+  padding-bottom: 93px;
+}
+.col_one {
+  width: 30%;
+}
+.image_div {
+  text-align: center;
+}
+.col_text {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  font-family: 'Avenir Next', sans-serif;
+  text-align: center;
+  padding-block: 30px;
+}
+/*****************Tab List CSS*******************************************/
+.image_div_section_two {
+  text-align: center;
+}
+.tablistsection {
+  margin-top: 100px;
+}
+
+.tab-labels {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  border: none;
+  justify-content: space-between;
+}
+
+.tab-labels li {
+  width: 34%;
+  font-size:0;
+}
+
+.tab-labels li a {
+  display: block;
+  padding: 20px 10px;
+  text-decoration: none;
+  color: #1d242a;
+  font-size: 14px;
+  border-bottom: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tab-labels li.active a {
+  border-color: #ccc;
+  border-bottom-color: #fff;
+  background-color: #dcedff;
+}
+
+.tab-labels li:last-child a {
+  border-right: 1px solid #ccc;
+}
+
+/* .tab-labels li a:hover {
+  background-color: #dcedff;
+} */
+
+.tab-content {
+  display: none;
+  font-size:0px;
+}
+
+.tab-content.active {
+  display: block;
+  font-size:0px;
+}
+.tab_one_container {
+  padding-top: 37px;
+  padding-bottom: 37px;
+  padding-right: 45px;
+  padding-left: 45px;
+  background-color: #dcedff;
+}
+.tab_name {
+  text-align: center;
+  font-family: 'Avenir Next', sans-serif;
+  font-weight: 400;
+}
+.big_image {
+  width: 100%;
+  display: block;
+}
+.tab_two_text {
+  font-family: 'Avenir Next', sans-serif;
+  font-size: 16px;
+  color: #1d242a;
+  line-height: 30px;
+}
+
+/***************************************CSS for the Bottles***************/
+@media screen and (max-width: 767px) {
+  .bottle_section_container {
+    padding-inline: 30px;
+  }
+  .tab_section_div {
+    padding-inline: 30px;
+  }
+  .col_one {
+    width: 100%;
+  }
+  .tab-labels {
+    flex-wrap: wrap;
+  }
+  .my_tab {
+    width: 100% !important;
+  }
+}
+
+var acc = document.getElementsByClassName("myaccordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+
+
+    
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+
+
+   const tabs = document.querySelectorAll('.tab-labels li a');
+      tabs.forEach((tab) => {
+        tab.addEventListener('click', (event) => {
+          event.preventDefault();
+          const tabContentId = event.target.getAttribute('href');
+          const tabContent = document.querySelector(tabContentId);
+          const activeTab = document.querySelector('.tab-labels li.active');
+          const activeTabContent = document.querySelector(
+            '.tab-content.active'
+          );
+          activeTab.classList.remove('active');
+          activeTabContent.classList.remove('active');
+          tab.parentElement.classList.add('active');
+          tabContent.classList.add('active');
+        });
+      });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
