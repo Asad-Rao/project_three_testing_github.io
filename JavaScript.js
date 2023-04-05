@@ -128,27 +128,53 @@ $(document).ready(function () {
   });
 });
 
-$('.carousel_div').slick({
-  infinite: true,
-  slidesToShow: 5,
-  slidesToScroll:5,
-  speed: 300,
-  dots: true,
-  arrows : false,
-  responsive: [
-    {
-      breakpoint: 767,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true,
-        arrows : false,
-      }
-    }
-  ]
-});
+// $('.carousel_div').slick({
+//   infinite: true,
+//   slidesToShow: 5,
+//   slidesToScroll:5,
+//   speed: 300,
+//   dots: true,
+//   arrows : false,
+//   responsive: [
+//     {
+//       breakpoint: 767,
+//       settings: {
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//         infinite: true,
+//         dots: true,
+//         arrows : false,
+//       }
+//     }
+//   ]
+// });
 
+
+
+if (window.matchMedia("(max-width: 992px)").matches) {
+  $('.eight_row_carousel').slick({
+    dots: false  ,
+    infinite:true ,
+    arrows : false,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll:1,
+    
+  });
+  
+} 
+if (window.matchMedia("(max-width: 992px)").matches) {
+$('.responsive').slick({
+  dots: false  ,
+  infinite:true ,
+  arrows : false,
+  speed: 300,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  infinite: true,
+  dots: false
+ 
+});}
 
 
 

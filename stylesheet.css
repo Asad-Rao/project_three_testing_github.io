@@ -503,8 +503,8 @@
   margin-block: 10px;
 }
 .sectononecoltwotext {
-  padding-top: 22px;
-  padding-bottom: 164px;
+  padding-top: 46px;
+  padding-bottom: 170px;
   width: 90%;
 }
 .right_product_view_all_div
@@ -684,8 +684,14 @@ ul {
   font-family: Poppins-SemiBold;
   color: #000000;
   font-size: 15px;
-
 }
+
+@media only screen and (max-width: 992px) {
+  .section-eight-col-heading  {
+  text-align: center;
+  }
+}
+
 .section-eight-text-div {
   padding-block: 15px;
 }
